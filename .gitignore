@@ -1,0 +1,5 @@
+# Git Ignore Exec an Tmp
+
+*~
+*.o
+read_image
