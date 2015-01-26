@@ -13,4 +13,5 @@ cc rdjpeg.c read_image.c -o read_image
 ### Génération fichier train.libsvm.txt et val.libsvm.txt :
 
 ./script_gen_histo val.urls.txt > val.libsvm.txt
+
 ./script_gen_histo train.urls.txt > train.libsvm.txt
