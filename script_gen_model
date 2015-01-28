@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./libsvm/svm-train -w+1 19 -b 1 -g 1.0 -h 0 data/train/svm/$1.svm
+mv $1.svm.model data/train/model/$1.model

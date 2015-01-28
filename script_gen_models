@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for line in $(ls data/train/ann); do
+
+name=$( echo $line | cut -d"." -f1 )
+#./script_fusion_histo_ann data/train/svm/color.svm data/train/ann/$line > data/train/svm/color_$name.svm
+
+./script_gen_model color_$name
+
+done
