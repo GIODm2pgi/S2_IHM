@@ -31,3 +31,10 @@ cc rdjpeg.c read_image.c -o read_image
 ### Génération de tous les predics pour tous les concepts :
 
 ./script_gen_predicts
+
+### Génération d'un .top
+
+/!\ A faire : générer les .out avec ./script_gen_predicts + modifier le script_gen_top pour ajouter la troncature
+
+./script_gen_predicts
+

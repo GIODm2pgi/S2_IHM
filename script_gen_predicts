@@ -5,7 +5,7 @@ for line in $(ls data/val/ann); do
 name=$( echo $line | cut -d"." -f1 )
 ./script_fusion_histo_ann data/val/svm/color.svm data/val/ann/$line > data/val/svm/color_$name.svm
 
-./libsvm/svm-predict -b 1 data/val/svm/color_$name.svm data/train/model/color_$name.svm.model color_$name.out
+./libsvm/svm-predict -b 1 data/val/svm/color.svm data/train/model/color_$name.model color_$name.out
 mv color_$name.out data/val/out
 
 done
