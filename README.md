@@ -16,7 +16,7 @@ cc rdjpeg.c read_image.c -o read_image
 
 ./script_gen_histo data/train/urls.txt > data/train/svm/color.svm
 
-### Génération d'une fusion d'histogramme et d'annotations pour un concept :
+### Génération d'une fusion histogramme/annotations pour un concept :
 
 ./script_fusion_histo_ann data/train/svm/color.svm data/train/ann/aeroplane.ann > data/train/svm/color_aeroplan.svm
 
