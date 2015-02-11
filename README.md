@@ -56,5 +56,5 @@ cat data/val/top/* > data/val/top/color_all.top
 
 ./script_clean_all_sift
 
-
+/!\ A faire la prochaine fois : lancer le script ci - dessus
 
