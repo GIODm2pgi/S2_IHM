@@ -34,7 +34,8 @@ cc rdjpeg.c read_image.c -o read_image
 
 ### Génération d'un .top
 
-/!\ A faire : générer les .out avec ./script_gen_predicts + modifier le script_gen_top pour ajouter la troncature
+./script_gen_top data/val/ann/aeroplane.ann data/val/out/color_aeroplane.out > data/val/top/color_aeroplane.top
 
-./script_gen_predicts
+### Génération de tous les .top :
 
+./script_gen_tops
