@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for line in $(ls data/train/ann); do
+
+name=$( echo $line | cut -d"." -f1 )
+
+./script_gen_top data/val/ann/$name.ann data/val/out/color_$name.out > data/val/top/color_$name.top
+
+done
