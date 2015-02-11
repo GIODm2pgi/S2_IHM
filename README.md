@@ -39,3 +39,22 @@ cc rdjpeg.c read_image.c -o read_image
 ### Génération de tous les .top :
 
 ./script_gen_tops
+
+### Génération du all.top :
+
+cat data/val/top/* > data/val/top/color_all.top
+
+### Évaluation :
+
+./script_trac_eval > data/val/eval.txt
+
+### Nettoyage SIFT d'1 fichier : 
+
+./script_clean_sift 2008_000019.sift
+
+### Nettoyage SIFT de tous les fichiers :
+
+./script_clean_all_sift
+
+
+
