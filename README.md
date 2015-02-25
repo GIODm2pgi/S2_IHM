@@ -56,5 +56,20 @@ cat data/val/top/* > data/val/top/color_all.top
 
 ./script_clean_all_sift
 
-/!\ A faire la prochaine fois : lancer le script ci - dessus
+### Création du fichier samples.txt
+
+cat data/train/sift/* > samples.txt
+
+### Génération de centers256.txt avec kmeans_clustering.R
+
+R --slave --no-save --no-restore --no-environ --args ./samples.txt 256 ./centers256.txt 10 < libsvm/kmeans_clustering.R
+
+### Mapping de train
+
+./libsvm/process_1nn_sift.sh
+
+### Mapping de val
+
+./libsvm/process_1nn_sift_val.sh /!\ à lancer
+
 
