@@ -66,10 +66,10 @@ R --slave --no-save --no-restore --no-environ --args ./samples.txt 256 ./centers
 
 ### Mapping de train
 
-./libsvm/process_1nn_sift.sh /!\ à lancer (pour finir)
+./libsvm/process_1nn_sift.sh
 
 ### Mapping de val
 
-./libsvm/process_1nn_sift_val.sh /!\ à lancer
+./libsvm/process_1nn_sift_val.sh
 
 
