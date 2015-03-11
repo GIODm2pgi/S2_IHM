@@ -1,5 +1,15 @@
 #!/bin/bash
 
+date +"%T"
+
+#for line in $(ls /home/m/mulhemp/sift/train/*.sift); do
+
+#name=$( basename $line )
+
+#./script_clean_sift $name
+
+#done
+
 for line in $(ls /home/m/mulhemp/sift/train/*.sift); do
 
 name=$( basename $line )
@@ -7,3 +17,5 @@ name=$( basename $line )
 ./script_clean_sift $name
 
 done
+
+date +"%T"
