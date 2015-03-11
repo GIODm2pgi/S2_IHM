@@ -72,4 +72,6 @@ R --slave --no-save --no-restore --no-environ --args ./samples.txt 256 ./centers
 
 ./libsvm/process_1nn_sift_val.sh
 
+### Génération des histogrammes de SIFT
 
+./script_gen_histo_sift
