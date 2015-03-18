@@ -83,4 +83,5 @@ R --slave --no-save --no-restore --no-environ --args ./samples.txt 256 ./centers
 ### Génération des models pour sift et des predicts
 
 ./script_gen_models_sift
+
 ./script_gen_predicts_sift
