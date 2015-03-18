@@ -1,0 +1,15 @@
+#!/bin/bash
+
+rm -f data/val/histo_sift_svm/sift.svm
+
+for line in $(ls data/val/histo_sift_svm/*.histo); do
+	cat $line >> data/val/histo_sift_svm/sift.svm
+	echo "" >> data/val/histo_sift_svm/sift.svm
+done
+
+rm -f data/train/histo_sift_svm/sift.svm
+
+for line in $(ls data/train/histo_sift_svm/*.histo); do
+	cat $line >> data/train/histo_sift_svm/sift.svm
+	echo "" >> data/train/histo_sift_svm/sift.svm
+done

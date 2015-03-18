@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for line in $(ls data/val/ann); do
+
+name=$( echo $line | cut -d"." -f1 )
+./script_fusion_histo_ann data/val/histo_sift_svm/sift.svm data/val/ann/$line > data/val/svm_sift/color_$name.svm
+
+./libsvm/svm-predict -b 1 data/val/histo_sift_svm/sift.svm data/train/model_sift/color_$name.model color_$name.out
+mv color_$name.out data/val/out_sift
+
+done

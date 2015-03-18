@@ -10,8 +10,12 @@ for line in $(ls data/val/1nn/*.sift); do
 		tab[$line2]=$(( tab[$line2] + 1 ))
 	done
 
-	for i in $(seq 0 255); do 
-		echo ${tab[$i]} >> data/val/histo_sift/$name
+	echo -n "0 " >> data/val/histo_sift_svm/$name.histo
+	for i in $(seq 0 255); do
+		if (( ${tab[$i]} != 0 ))
+		then
+			echo -n "$i:${tab[$i]} " >> data/val/histo_sift_svm/$name.histo
+		fi
 	done
 
 done
@@ -26,8 +30,12 @@ for line in $(ls data/train/1nn/*.sift); do
 		tab[$line2]=$(( tab[$line2] + 1 ))
 	done
 
+	echo -n "0 " >> data/train/histo_sift_svm/$name.histo
 	for i in $(seq 0 255); do 
-		echo ${tab[$i]} >> data/train/histo_sift/$name
+		if (( ${tab[$i]} != 0 ))
+		then
+			echo -n "$i:${tab[$i]} " >> data/train/histo_sift_svm/$name.histo
+		fi
 	done
 
 done
