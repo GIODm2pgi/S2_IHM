@@ -89,3 +89,15 @@ cat data/val/histo_sift_svm/* > data/val/histo_sift_svm/sift.svm
 ./script_gen_models_sift
 
 ./script_gen_predicts_sift
+
+### Génération des .top pour les sift
+
+./script_gen_tops
+
+### Génération du all.top pour les sift :
+ 
+cat data/val/top_sift/* > data/val/top_sift/color_all.top (TODO)
+
+### Évaluation pour les sift :
+
+./script_trac_eval_sift > data/val/eval_sift.txt  (TODO)
