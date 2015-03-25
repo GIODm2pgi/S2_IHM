@@ -96,7 +96,7 @@ cat data/val/histo_sift_svm/* > data/val/histo_sift_svm/sift.svm
 
 ### Génération du all.top pour les sift :
  
-cat data/val/top_sift/* > data/val/top_sift/color_all.top (TODO)
+cat data/val/top_sift/* > data/val/top_sift/color_all.top
 
 ### Évaluation pour les sift :
 
