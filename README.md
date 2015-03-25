@@ -79,6 +79,7 @@ R --slave --no-save --no-restore --no-environ --args ./samples.txt 256 ./centers
 ### Génération des fichiers val/sift.svm et train/sift.svm
 
 ./script_gen_sift_svm
+cat data/train/histo_sift_svm/* > data/train/histo_sift_svm/sift.svm
 
 ### Génération des models pour sift et des predicts
 
