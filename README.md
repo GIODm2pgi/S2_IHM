@@ -100,4 +100,4 @@ cat data/val/top_sift/* > data/val/top_sift/color_all.top
 
 ### Évaluation pour les sift :
 
-./script_trac_eval_sift > data/val/eval_sift.txt  (TODO)
+./script_trac_eval_sift > data/val/eval_sift.txt
