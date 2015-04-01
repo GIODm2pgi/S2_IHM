@@ -101,3 +101,9 @@ cat data/val/top_sift/* > data/val/top_sift/color_all.top
 ### Évaluation pour les sift :
 
 ./script_trac_eval_sift > data/val/eval_sift.txt
+
+### Programme de classification d'une image
+
+Besoin d'un dossier tmp, des modèles, des scripts :
+
+./classification_image.sh http://mrim.imag.fr/voc10/images/2008_000021.jpg
