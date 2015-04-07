@@ -102,6 +102,10 @@ cat data/val/top_sift/* > data/val/top_sift/color_all.top
 
 ./script_trac_eval_sift > data/val/eval_sift.txt
 
+### Fusion tardive et évaluation
+
+./script_fusion_trac_eval > data/val/eval_fusion.txt
+
 ### Programme de classification d'une image
 
 Besoin d'un dossier tmp, des modèles, des scripts :
